@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 namespace Contacts_API.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     public class ContactsController : Controller
     {
         private readonly ContactsAPIDbContext dbContext;

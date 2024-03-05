@@ -1,18 +1,8 @@
 [
   {
     "ContainingType": "Contacts_API.Controllers.ContactsController",
-    "Method": "GetContacts",
-    "RelativePath": "api/Contacts",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Contacts_API.Controllers.ContactsController",
     "Method": "AddContacts",
-    "RelativePath": "api/Contacts",
+    "RelativePath": "api/Contacts/AddContacts",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -27,8 +17,24 @@
   },
   {
     "ContainingType": "Contacts_API.Controllers.ContactsController",
+    "Method": "DeleteContacts",
+    "RelativePath": "api/Contacts/DeleteContacts/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Contacts_API.Controllers.ContactsController",
     "Method": "GetContact",
-    "RelativePath": "api/Contacts/{id}",
+    "RelativePath": "api/Contacts/GetContact/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -43,8 +49,18 @@
   },
   {
     "ContainingType": "Contacts_API.Controllers.ContactsController",
+    "Method": "GetContacts",
+    "RelativePath": "api/Contacts/GetContacts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Contacts_API.Controllers.ContactsController",
     "Method": "UpdateContacts",
-    "RelativePath": "api/Contacts/{id}",
+    "RelativePath": "api/Contacts/UpdateContacts/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -57,22 +73,6 @@
       {
         "Name": "update",
         "Type": "Contacts_API.Models.UpdateContactsRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Contacts_API.Controllers.ContactsController",
-    "Method": "DeleteContacts",
-    "RelativePath": "api/Contacts/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
         "IsRequired": true
       }
     ],

@@ -9,5 +9,9 @@ namespace Contacts_API.Data
         {
         }
         public DbSet<Contact> Contacts { get; set; }
+        public DbSet<Products> Products { get; set; }
+        public DbSet<ProductStatus> ProductStatuses { get; set; }
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<Transport> Transports { get; set; }
     }
 }
